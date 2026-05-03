@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+     
+    <link rel="icon" type="image/png" href="cam2.jpeg">
     <title>WGL TECNOLOGIA</title>
 
     <style>
@@ -12,22 +14,24 @@
             box-sizing: border-box;
         }
 
+       
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: rgb(245, 238, 237);
         }
 
         header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
+        
+           padding: 15px;
+           text-align: center;
+           background: linear-gradient(135deg, #0D2345 0%, #123A6B 40%, #00D1B2 100%);
         }
 
         nav {
             background-color: #555;
             padding: 10px;
             text-align: center;
+            
         }
 
         nav a {
@@ -50,11 +54,11 @@
             padding: 15px;
             margin: 10px 0;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(9, 62, 238, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-        
+            background: linear-gradient(135deg, #0D2345 0%, #123A6B 40%, #00D1B2 100%);
         }
         
         .card2 {
@@ -65,6 +69,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, #0D2345 0%, #123A6B 40%, #00D1B2 100%);
             
         }
 
@@ -76,7 +81,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, #0D2345 0%, #123A6B 40%, #00D1B2 100%);
                 
+        }
+
+        p {
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: oblique;
+            
+        }
+
+        h1 {
+            font-size: 50px;
         }
 
         footer {
@@ -87,24 +104,59 @@
             margin-top: 20px;
         }
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        /* Botão estilo hacker */
+              #enterBtn {
+              width: 100%;
+              margin-top: 30px;
+              padding: 15px 40px;
+              background: transparent;
+              border: 2px solid #00ff9f;
+              color: #00ff9f;
+              font-size: 16px;
+              letter-spacing: 2px;
+              cursor: pointer;
+              position: relative;
+              transition: 0.3s;
+              text-transform: uppercase;
+            }
+
+               /* Glow */
+              #enterBtn:hover {
+              background: #00ff9f;
+              color: black;
+              box-shadow: 0 0 20px #00ff9f, 0 0 40px #00ff9f;
+             }
+
+              /* Efeito scanner */
+              #enterBtn::before {
+               content: "";
+               position: absolute;
+               top: 0;
+               left: -100%;
+               width: 100%;
+               height: 100%;
+               background: linear-gradient(120deg, transparent, #00ff9f, transparent);
+               transition: 0.5s;
+             }
+
+            
+
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>WGL Soluções Tecnológicas</h1><br>
+        <h1><marquee>WGL Soluções Tecnológicas</marquee></h1><br>
         <p>TECNOLOGIA QUE PROTEGE</p>
     </header>
 
     <nav>
-        <a href="index4.html">Serviços</a>
-        <a href="index2.html">Sobre</a>
-        <a href="index3.html">Contato</a>
-        <a href="#">Tabela de Valores</a>
-        <a href="index0.html">Home</a>
+         <button id="enterBtn">Serviços</button>
+         <button id="enterBtn">Sobre</button>
+         <button id="enterBtn">Contato</button>
+         <button id="enterBtn">Tabela de Valores</button>
+         <button id="enterBtn">Home</button>
         
     </nav>
 
@@ -112,8 +164,8 @@
 
         <div class="card1">
             <p>
-                Segurança eletrônica inteligente: <br>
-                "Protegendo o que importa para você com precisão."
+                 SEGURANÇA ELETRÔNICA INTELIGENTE:<br><br>
+                 <marquee>"Protegendo o que importa para você com precisão."</marquee>
             </p>
 
             <img src="poste3.jpeg" style="width:15%; display: flex; margin-left: auto; margin-right: 0;">
@@ -121,8 +173,9 @@
         </div>
 
         <div class="card2">
-            <p>Tecnologia da Informação (TI) <br>
-               "Transformando dados em inteligência digital."
+            <p>
+               TECNOLOGIA DA INFORMAÇÃO (TI)<br><br>
+              <marquee> "Transformando dados em inteligência digital."</marquee>
             </p>
             <img src="rack3.jpeg" style="width:15%; display: block; margin-left: auto; margin-right: 0;">
             
@@ -130,14 +183,14 @@
 
         <div class="card3">
             <p>
-                Elétrica <br>
-                "Instalações seguras seguem as normas. Não corra riscos, contrate um profissional."
+                Elétrica<br><br>
+                <marquee>"Instalações seguras seguem as normas. Não corra riscos, contrate um profissional."</marquee>
             </p>
             <img src="disjuntor.jpeg" style="width: 15%; display: block; margin-left: auto; margin-right: 0;">
             
         </div>
 
-    </div>
+        </div>
 
     <footer>
         <p>© 2026 - WGL SOLUÇÕES TECNOLÓGICAS</p>
